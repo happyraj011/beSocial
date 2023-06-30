@@ -1,0 +1,77 @@
+body {
+  margin: 7px 50px 0px 700px;
+  font-family: Arial, sans-serif;
+  background-color: aquamarine;
+}
+.container {
+  width: 500px;
+  height: 698px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding-top:20px;
+  padding: 16px;
+}
+h1 {
+  text-align:left;
+  text-transform: uppercase;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 15px 0;
+  display: inline-block;
+  border: 3px solid hwb(108 7% 33% / 0.464);
+  box-sizing: border-box;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+button {
+  background-color: rgb(14, 161, 234);
+  color: rgb(10, 10, 10);
+  padding: 14px 20px;
+  margin: 10px 0;
+  border: rgba(235, 130, 11, 0.537);
+  cursor: pointer;
+  width: 100%;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+button:hover {
+  opacity: 0.6;
+}
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+}
+.fill {
+  text-transform: uppercase;
+  font-weight: 30px;
+  color: rgb(0, 0, 0);
+}
+.olduser {
+  padding: 0px;
+  margin-bottom: 10px;
+}
+.botton {
+  margin-top: -12px;
+  width: 150px;
+  height: auto;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}

@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('landingBG.jpg');
+    background-size: cover;
+    background-position: center;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3.5em;
+    width: 100%;
+    padding: 1.2rem 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.138);
+}
+.logo {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    user-select: none;
+}
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color:white;
+    text-decoration:none;
+    font-weight: 500;
+    margin-left: 6rem;
+}
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background:white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scale(0);
+    transition: transform .5s;
+}
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scale(1);
+}
+
+.navigation .loginbtn {
+    width: 5.5rem;
+    height: 2.4rem;
+    background: transparent;
+    border: 0.1em solid rgb(235, 235, 237);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 4rem;
+    transition: .5s;
+}
+.navigation .loginbtn:hover {
+    background: rgb(211, 211, 235);
+    color: rgb(0, 0, 0);
+}
+
+#introLeft{
+    border: 2px solid red;
+    color: white;
+    padding-left:2em;
+    padding-top: 10rem;
+    padding-bottom: auto;
+
+    width: 58%;
+    height:100%;
+    position: absolute;
+    left: 1em;  
+}
+#introRight{
+    /* display:none; */
+    border: 2px solid red;
+    color: white;
+    padding: 8em 2em;
+    height:100%;
+    width: 38%;
+    position: absolute;
+    right: 1em;  
+}
+#introLeft h1{
+    padding-bottom: 0.8em;
+    font-size: 4em;
+}
+#introbtn{
+        width: 15%;
+        /* height: 45px; */
+        background: rgba(255, 255, 255, 0.573);
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1em;
+
+        margin-top:1.4em;
+        padding:0.6em;
+        color: rgb(0, 0, 0);
+        font-weight: 500;
+}
+#introbtn:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(226, 210, 210);
+}
+.form {
+    /* display : none; */
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(225, 225, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#loginForm{
+    display : none;
+    position: relative;
+    width: 20rem;
+    height: 25rem;
+    background: transparent;
+    border: 2px solid rgba(225, 225, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.form .form-box {
+    /* display: none; */
+    width: 100%;
+    padding: 40px;
+}
+.form-box h2 {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.introRight .form-boxRegistration{
+    display:none;
+}
+.rform {
+    /* display:none; */
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(225, 225, 255, 0.604);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rform .form-box {
+    width: 100%;
+    padding: 40px;
+}
+.rform-box h2 {
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.4s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+
+}
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    line-height: 57px;
+}
+.remember-forget {
+    font-size: .9em;
+    color: rgb(236, 236, 236);
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forget label input {
+    accent-color: rgb(255, 255, 255);
+    margin-right: 3px;
+}
+.remember-forget a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.remember-forget a:hover {
+    text-decoration: underline;
+}
+.btn {
+    width: 100%;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.829);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(226, 210, 210);
+}
+.rbtn {
+    width: 100%;
+    height: 45px;
+    background: black;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: -1em 0 -1.1em 0;
+    color: white;
+    font-weight: 500;
+}
+.rbtn:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(227, 215, 215);
+}
+.login-register {
+    font-size: .9em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login-register p a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-register p a:hover {
+    text-decoration: underline;
+}
+.login-already {
+    font-size: .9em;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login-already p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-already p a:hover {
+    text-decoration: underline;
+}
+
+
+

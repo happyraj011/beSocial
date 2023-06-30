@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=”X-UA-Compatible” content=”IE=edge”>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginpage</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h2 class="logo">One Vision</h2>
+        <nav class="navigation">
+            <a href="#">Explore</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <button class="loginbtn">Login</button>
+        </nav>
+    </header>
+    <div id="introLeft" class="introLeft">
+        <h1>Welcome to beSocial</h1>
+        <p>be Social is the social media started with the initiative of Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Numquam nobis ea culpa error vel a temporibus, fuga officia quod voluptate sint facere
+            neque animi tempora reprehenderit laudantium velit nesciunt mollitia laborum laboriosam id, ratione rem
+            voluptas! Ullam delectus earum facilis sequi, cum perspiciatis molestiae dolorum possimus dolore corporis
+            quos laboriosam?</p>
+        <button id="introbtn">Read More</button>
+    </div>
+
+
+
+    
+    <!-- ----------------------------Registration form-------------------------------- -->
+    <div id="introRight" class="introRight">
+        <div class="rform">
+            <div class="form-boxRegistration">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="person">
+                            </ion-icon></span>
+                        <input type="name" required>
+                        <label>Name</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Confirm Password</label>
+                    </div>
+                    <button type="submit" class="rbtn">Register</button>
+                    <div class="login-already">
+                        <p>Already have an account?<a href="#" class="Login">Login</a> </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------LOGIN FORM --------------------------- -->
+    <div id="introRight" class="introRight">
+        <!-- <h1>Welcome to beSocial</h1>
+            <h4>be Social is  the social media started with the initiative of Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nobis ea culpa error vel a temporibus, fuga officia quod voluptate sint facere neque animi tempora reprehenderit laudantium velit nesciunt mollitia laborum laboriosam id, ratione rem voluptas! Ullam delectus earum facilis sequi, cum perspiciatis molestiae dolorum possimus dolore corporis quos laboriosam?</h4>
+            <button id="introbtn">Read More</button> -->
+        <div id="loginForm" class="form">
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forget">
+                        <label><input type="checkbox">
+                            Remember me</label>
+                        <a href="#">Forget password</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+                <div class="login-register">
+                    <p>Don't have an account? 
+                        <button id="registerBtn" onclick="registerForm()">Register</button>
+                        <!-- <a href="#" class="register-link">Register</a> </p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        if (introRight.style.display=='block'){
+            introRight.style.display = 'none';
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
